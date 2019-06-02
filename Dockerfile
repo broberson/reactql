@@ -1,4 +1,4 @@
-FROM node:12.2.0-alpine AS builder
+FROM node:12.3.1-alpine AS builder
 
 # log most things
 ENV NPM_CONFIG_LOGLEVEL notice
@@ -19,10 +19,10 @@ RUN npm run build:production
 
 ########################
 
-FROM node:12.2.0-alpine
+FROM node:12.3.1-alpine
 WORKDIR /app
 
-# copy source + compiled `node_modules` 
+# copy source + compiled `node_modules`
 COPY --from=builder /build .
 
 # by default, run in production mode

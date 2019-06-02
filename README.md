@@ -244,7 +244,7 @@ You'll also find some other useful goodies in the [root]()...
 
 - Typescript configuration via [tsconfig.json](tsconfig.json)
 
-- A sample multi-build [Dockerfile](Dockerfile) based on Node 11.8 and Alpine, for quickly deploying your code base to production.
+- A sample multi-build [Dockerfile](Dockerfile) based on Node 12.3.1 and Alpine, for quickly deploying your code base to production.
 
 # Follow @reactql for updates
 
